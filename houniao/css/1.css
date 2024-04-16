@@ -1,0 +1,44 @@
+body {
+  height: 90000px;
+  background-color: blue;
+}
+
+/* 导航栏 */
+ul#menu {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  width: 110px;
+  margin: -160px 0 0;
+  padding: 0;
+  list-style-type: none;
+  z-index: 999;
+}
+#menu li {
+  margin-top: 10px;
+  font: 14px "Microsoft Yahei";
+}
+#menu a {
+  display: flex;
+  /* background-color: #fff; */
+  /* color: #0074ea; */
+  color: #fff;
+  text-decoration: none;
+}
+#menu .active a {
+  color: #fff;
+  background-color: rgb(0, 116, 234);
+  vertical-align: middle;
+}
+#menu img {
+  display: inline-block;
+  border-radius: 50%;
+  width: 40px;
+}
+#menu span {
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}

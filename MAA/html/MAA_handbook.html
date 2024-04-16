@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="authoring-tool" content="Adobe_Animate_CC" />
+    <title>MAA | 神兽图鉴</title>
+    <link rel="stylesheet" href="../css/currency.css">
+    <link rel="stylesheet" href="../css/menupage.css">
+    <link rel="stylesheet" href="../css/handbook.css">
+    <link rel="shortcut icon" href="../img/MAA-logo.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="../../CSS/ini.css">
+    <link rel="stylesheet" href="../../CSS/style1.css">
+
+    <script src="../js/d3.js"></script>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--t-purple);
+        overflow: hidden;
+    }
+
+</style>
+
+<body>
+    <svg>
+        <defs>
+            <filter id='wave'>
+                <feTurbulence type='turbulence' stitchTiles='stitch'
+                              numOctaves='8' baseFrequency='0.02' seed='100' />
+                <feDisplacementMap in='SourceGraphic' scale='0' />
+            </filter>
+        </defs>
+    </svg>
+
+
+
+    <div style="display: block;width: 100%;height: 68px;">
+        <header style="background-color: black;width: 100%;height: 68px;">
+            <a href="#" class="brand">SKYMIGRANTS</a>
+            <div class="menu-btn"></div>
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="../../index.html">首页</a>
+                    <a href="../../main.html" >鸟类物种树图</a>
+                    <a href="../../shida_html/one.html">我国濒危鸟类分布 </a>
+                    <a href="../../page2.html">各项数据</a>
+                    <a href="MAA_handbook.html" style="color: greenyellow;">鸟类图鉴</a></a>
+                    <a href="../../last2.html">云词政策</a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+
+    <div id="menupage">
+        <div class="menupage-window">
+            <div class="menupage-window-imgboxs"
+                 onclick="menucontrol.jumppage()">
+                <img src="../img/menu img1.webp">
+                <img src="../img/menu img2.webp">
+                <img src="../img/menu img3.webp">
+                <img src="../img/menu img4.webp">
+            </div>
+            <img src="../svg/window.svg">
+        </div>
+        <!-- <div class="menupage-textbox">
+            <div>
+                <p onmouseover="menucontrol.change(0)"
+                   onclick="menucontrol.jumppage(0)">关于<span>. about us</span>
+                </p>
+            </div>
+            <div>
+                <p onmouseover="menucontrol.change(1)"
+                   onclick="menucontrol.jumppage(1)">团队<span>. team</span></p>
+            </div>
+            <div>
+                <p onmouseover="menucontrol.change(2)"
+                   onclick="menucontrol.jumppage(2)">图鉴<span>. handbook</span>
+                </p>
+            </div>
+            <div>
+                <p onmouseover="menucontrol.change(3)"
+                   onclick="menucontrol.jumppage(3)">征召<span>. join us</span>
+                </p>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="menucolmun">
+        <div class="menucolmun-logo" onclick="logojump_judge()">
+            <img src="../svg/MAA logo.svg">
+        </div> -->
+        <div class="menucolmun-button" onclick="menucontrol.switch()">
+            <svg class="menucolmun-button-linebox menucolmun-button-linebox-off"
+                 viewBox="0 0 600 600">
+                <circle cx="300" cy="300" r="300" />
+                <rect width="600" height="116.875" />
+                <rect y="249.375" width="600" height="116.875" />
+                <rect y="249.375" width="600" height="116.875" />
+                <rect y="483.125" width="600" height="116.875" />
+            </svg>
+            <div class="menucolmun-button-text">MENU</div>
+        </div>
+    </div>
+    <div class="persbox">
+        <div class="handbook">
+            <div class="handbook-backg"></div>
+            <div class="cardbox">
+                <div class="card">
+                    <img class="card-cloud1"
+                         src="../svg/handbook/cloud1.svg"></img>
+                    <img class="card-cloud2"
+                         src="../svg/handbook/cloud2.svg"></img>
+                    <img class="card-cloud3"
+                         src="../svg/handbook/cloud3.svg"></img>
+                    <div class="card-img">
+                        <img src="../img/handbook//db.png">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-text-head">
+                            <p>大鸨</p>
+                            <p>NO.1284</p>
+                        </div>
+                        <div class="card-text-body">
+                            体形硕大的鸨，上体具有宽大的棕色和黑色横纹，下体及尾下覆羽白色，繁殖期雄鸟颈前具有状如胡须的白色丝状羽。</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-cloud1"
+                         src="../svg/handbook/cloud1.svg"></img>
+                    <img class="card-cloud2"
+                         src="../svg/handbook/cloud2.svg"></img>
+                    <img class="card-cloud3"
+                         src="../svg/handbook/cloud3.svg"></img>
+                    <div class="card-img">
+                        <img src="../img/handbook//sqy.png">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-text-head">
+                            <p>中华秋沙鸭</p>
+                            <p>NO.4632</p>
+                        </div>
+                        <div class="card-text-body"> 也称鳞胁秋沙鸭、唐秋沙。1989年被列为中国国家一级保护动物，是当时鸭科鸟类中唯一一种，也经常被称为“国鸭”。
+                            为鸭科秋沙鸭属的鸟类 </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-cloud1"
+                         src="../svg/handbook/cloud1.svg"></img>
+                    <img class="card-cloud2"
+                         src="../svg/handbook/cloud2.svg"></img>
+                    <img class="card-cloud3"
+                         src="../svg/handbook/cloud3.svg"></img>
+                    <div class="card-img">
+                        <img src="../img/handbook//xique.png">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-text-head">
+                            <p>喜鹊</p>
+                            <p>NO.8653</p>
+                        </div>
+                        <div class="card-text-body">
+                            喜鹊是适应能力比较强的鸟类，在山区、平原都有栖息，无论是荒野、农田、郊区、城市都能看到它们的身影。 </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-cloud1"
+                         src="../svg/handbook/cloud1.svg"></img>
+                    <img class="card-cloud2"
+                         src="../svg/handbook/cloud2.svg"></img>
+                    <img class="card-cloud3"
+                         src="../svg/handbook/cloud3.svg"></img>
+                    <div class="card-img">
+                        <img src="../img/handbook/641.png">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-text-head">
+                            <p>黄端斑啄果鸟</p>
+                            <p>NO.2695</p>
+                        </div>
+                        <div class="card-text-body">
+                            黄端斑啄果鸟，是斑啄果鸟科下的一种，体型小巧，外形美丽，尾巴短小，雌雄外观无明显差异。 </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-cloud1"
+                         src="../svg/handbook/cloud1.svg"></img>
+                    <img class="card-cloud2"
+                         src="../svg/handbook/cloud2.svg"></img>
+                    <img class="card-cloud3"
+                         src="../svg/handbook/cloud3.svg"></img>
+                    <div class="card-img">
+                        <img src="../img/handbook/642.png">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-text-head">
+                            <p>紫胸佛法僧</p>
+                            <p>NO.3819</p>
+                        </div>
+                        <div class="card-text-body"> 紫胸佛法僧是肯尼亚国鸟，广泛分布在肯尼亚的各个保护区，是非洲分布最广的一种佛法僧。 </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-cloud1"
+                         src="../svg/handbook/cloud1.svg"></img>
+                    <img class="card-cloud2"
+                         src="../svg/handbook/cloud2.svg"></img>
+                    <img class="card-cloud3"
+                         src="../svg/handbook/cloud3.svg"></img>
+                    <div class="card-img">
+                        <img src="../img/handbook/643.png">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-text-head">
+                            <p>白胸翡翠</p>
+                            <p>NO.4327</p>
+                        </div>
+                        <div class="card-text-body">
+                            又名苍翡翠，也叫白喉翡翠，是一种分布在亚洲南部和西部的翡翠。 </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-cloud1"
+                         src="../svg/handbook/cloud1.svg"></img>
+                    <img class="card-cloud2"
+                         src="../svg/handbook/cloud2.svg"></img>
+                    <img class="card-cloud3"
+                         src="../svg/handbook/cloud3.svg"></img>
+                    <div class="card-img">
+                        <img src="../img/handbook/644.png">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-text-head">
+                            <p>朱雀</p>
+                            <p>NO.5710</p>
+                        </div>
+                        <div class="card-text-body">
+                            因羽毛呈鲜艳红色而得名。属名来自古希腊语“karpos”（水果）和“dakno”（咬）。</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-cloud1"
+                         src="../svg/handbook/cloud1.svg"></img>
+                    <img class="card-cloud2"
+                         src="../svg/handbook/cloud2.svg"></img>
+                    <img class="card-cloud3"
+                         src="../svg/handbook/cloud3.svg"></img>
+                    <div class="card-img">
+                        <img src="../img/handbook/645.png">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-text-head">
+                            <p>白头海雕</p>
+                            <p>NO.7194</p>
+                        </div>
+                        <div class="card-text-body">
+                            白头海雕，又名秃头海雕，俗称秀雕、秃头雕、白头雕，是分布于北美洲的大型猛禽。 </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-cloud1"
+                         src="../svg/handbook/cloud1.svg"></img>
+                    <img class="card-cloud2"
+                         src="../svg/handbook/cloud2.svg"></img>
+                    <img class="card-cloud3"
+                         src="../svg/handbook/cloud3.svg"></img>
+                    <div class="card-img">
+                        <img src="../img/handbook/646.png">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-text-head">
+                            <p>乌鸫</p>
+                            <p>NO.0545</p>
+                        </div>
+                        <div class="card-text-body"> 被誉为世界最聪明的鸟类。分布于中国除东北以外的大部分地区。该物种的模式产地在中国南部。[2][3]其某些族群会迁往香港及老挝、越南等地过冬。 </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-cloud1"
+                         src="../svg/handbook/cloud1.svg"></img>
+                    <img class="card-cloud2"
+                         src="../svg/handbook/cloud2.svg"></img>
+                    <img class="card-cloud3"
+                         src="../svg/handbook/cloud3.svg"></img>
+                    <div class="card-img">
+                        <img src="../img/handbook/647.png">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-text-head">
+                            <p>矛隼</p>
+                            <p>NO.9326</p>
+                        </div>
+                        <div class="card-text-body">
+                            又名海东青、鹘鹰，是隼属猛禽中最大的一种，分布在北极以及北美洲、亚洲的广大地区，在中国原产于黑龙江、吉林等地。 </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-cloud1"
+                         src="../svg/handbook/cloud1.svg"></img>
+                    <img class="card-cloud2"
+                         src="../svg/handbook/cloud2.svg"></img>
+                    <img class="card-cloud3"
+                         src="../svg/handbook/cloud3.svg"></img>
+                    <div class="card-img">
+                        <img src="../img/handbook/648.png">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-text-head">
+                            <p>蛎鹬</p>
+                            <p>NO.5813</p>
+                        </div>
+                        <div class="card-text-body">
+                            蛎鹬在飞行中很明显，翅膀和尾巴有白色斑块，背部黑色，腹部白色。幼鸟棕色，脖子白色，喙颜色暗沉。叫声鲜明响亮。 </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-cloud1"
+                         src="../svg/handbook/cloud1.svg"></img>
+                    <img class="card-cloud2"
+                         src="../svg/handbook/cloud2.svg"></img>
+                    <img class="card-cloud3"
+                         src="../svg/handbook/cloud3.svg"></img>
+                    <div class="card-img">
+                        <img src="../img/handbook/649.png">
+                    </div>
+                    <div class="card-text">
+                        <div class="card-text-head">
+                            <p>白鹇</p>
+                            <p>NO.0895</p>
+                        </div>
+                        <div class="card-text-body">
+                            白鹇是中国广东省省鸟，栖息于季风常绿阔叶林、针阔混交林及马尾松林。 </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="showbox">
+        <div class="showbox-card" onclick="handbook.jumppage()" onmouseover="
+        mouseicon_show()" onmouseout="mouseicon_disapper()">
+            <img class="card-cloud1" src="../svg/handbook/cloud1.svg"></img>
+            <img class="card-cloud2" src="../svg/handbook/cloud2.svg"></img>
+            <img class="card-cloud3" src="../svg/handbook/cloud3.svg"></img>
+            <div class="card-img">
+                <img src="../img/handbook//db.png">
+            </div>
+            <div class="card-text">
+                <div class="card-text-head">
+                    <p>大鸨</p>
+                    <p>NO.1284</p>
+                </div>
+                <div class="card-text-body">大鸨，应该是现存陆地上能飞起来的最重的鸟。
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-tips">
+        <p>SCROLL</p>
+        <svg viewBox="0 0 6 164">
+            <path d="M3,0V164" />
+        </svg>
+    </div>
+    <div class="mouseicon"> click </div>
+</body>
+<script src="../js/menupage.js"></script>
+<script src="../js/handbook.js"></script>
+
+</html>

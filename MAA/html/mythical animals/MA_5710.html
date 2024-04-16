@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="authoring-tool" content="Adobe_Animate_CC" />
+    <title>鸟类图鉴 NO.5710 朱雀</title>
+    <link rel="stylesheet" href="../../css/currency.css">
+    <link rel="stylesheet" href="../../css/menupage.css">
+    <link rel="stylesheet" href="../../css/mythical_animals.css">
+    <link rel="shortcut icon" href="../../img/MAA-logo.ico" type="image/x-icon">
+    <script src="../../js/d3.js"></script>
+</head>
+<style>
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        background-color: var(--t-purple);
+    }
+
+</style>
+
+<body>
+    <!-- <div id="menupage">
+        <div class="menupage-window">
+            <div class="menupage-window-imgboxs"
+                 onclick="menucontrol.jumppage()">
+                <img src="../../img/menu img1.webp">
+                <img src="../../img/menu img2.webp">
+                <img src="../../img/menu img3.webp">
+                <img src="../../img/menu img4.webp">
+            </div>
+            <img src="../../svg/window.svg">
+        </div>
+        <div class="menupage-textbox">
+            <div>
+                <p onmouseover="menucontrol.change(0)"
+                   onclick="menucontrol.jumppage(0)">关于<span>. about us</span>
+                </p>
+            </div>
+            <div>
+                <p onmouseover="menucontrol.change(1)"
+                   onclick="menucontrol.jumppage(1)">团队<span>. team</span></p>
+            </div>
+            <div>
+                <p onmouseover="menucontrol.change(2)"
+                   onclick="menucontrol.jumppage(2)">图鉴<span>. handbook</span>
+                </p>
+            </div>
+            <div>
+                <p onmouseover="menucontrol.change(3)"
+                   onclick="menucontrol.jumppage(3)">征召<span>. join us</span>
+                </p>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="menucolmun" id="menucolmun">
+        <div class="menucolmun-logo" onclick=" if (menucontrol.if_pageshow) {menucontrol.jumppage(4);}
+              else {jumppage('../../MAA_home.html')}">
+            <img src="../../svg/MAA logo.svg">
+        </div>
+        <div class="menucolmun-button" onclick="menucontrol.switch()">
+            <svg class="menucolmun-button-linebox menucolmun-button-linebox-off"
+                 viewBox="0 0 600 600">
+                <circle cx="300" cy="300" r="300" />
+                <rect width="600" height="116.875" />
+                <rect y="249.375" width="600" height="116.875" />
+                <rect y="249.375" width="600" height="116.875" />
+                <rect y="483.125" width="600" height="116.875" />
+            </svg>
+            <div class="menucolmun-button-text">MENU</div>
+        </div>
+    </div> -->
+    <div class="background">
+        <img class="background-img" src="../../img/handbook/zqbg.jpg">
+    </div>
+    <div class="textbackg"></div>
+    <div class="maintext">
+        <div class="maintext-box">
+            <div class="texttitle">朱雀</div>
+            <p class="textblock" value="0">
+                代号5710，朱雀是鸟纲、雀科的小型鸟类，体长13-16厘米。雄鸟头顶、腰、喉、胸红色或洋红色，背、肩褐色或橄榄褐色，羽缘沾红色，两翅和尾黑褐色，羽缘沾红色。雌鸟上体灰褐或橄榄揭色、具暗色纵纹，下体白色或皮黄白色、亦具黑褐色纵纹。
+             </p>
+            <p class="textblock" value="1">
+                主要栖息于海拔1000米以上的针叶林和针阔叶混交林及其林缘地带。常单独或成对活动，非繁殖期则多呈几只至十余只的小群活动和觅食。以果实、种子、花序、芽苞、嫩叶等植物性食物为食，繁殖期间也吃部分昆虫。
+
+                分布于芬兰南部、瑞典南部，往南到德国东部、波兰、乌克兰、俄罗斯南，山西出现为迁徙鸟。
+
+                </p>
+            <p class="textblock" value="2">
+             
+                在古籍的记载中，
+
+                有一种美丽的鸟，
+
+                以它的歌声与仪态为百鸟之王，
+
+                它能给人间带来祥瑞，
+
+                这就是传说中四大“神兽”之一的朱雀。
+                
+                普通朱雀虽非传说中的朱雀，但普通朱雀雄鸟也是身披火红色羽毛，代表热情和祥瑞。
+                 
+            </p>
+            
+            <p>
+
+            </p>
+        </div>
+    </div>
+    <div class="mouse_judgebox" onmouseover="mouseicon_show()"
+         onmouseleave="mouseicon_disapper()" onclick="jumppage()">
+        <div class="mouseicon"> BACK </div>
+    </div>
+</body>
+<script src="../../js/menupage.js"></script>
+<script src="../../js/mythical_animals.js"></script>
+<script>
+    backg_imgs = [
+        "../../img/handbook/zqbg.jpg",
+        "../../img/handbook/zqbg2.jpg",
+        "../../img/handbook/zqbg3.jpg",
+    ];
+</script>
+
+</html>

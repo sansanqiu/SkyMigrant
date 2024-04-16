@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+
+
+  
+
+    <link rel="stylesheet" href="houniao/css/base.css" />
+    <link rel="stylesheet" href="houniao/css/jquery.fullPage.css" />
+
+    <script src="houniao/js/jquery.min.js"></script>
+    <!-- 如果想要 easing 缓动动画 就引入  -->
+    <script src="houniao/js/jquery.easing.1.3.js"></script>
+    <script src="houniao/js/jquery.fullPage.min.js"></script>
+    <!-- 引入自己的 css js -->
+    <link rel="stylesheet" href="houniao/css/index.css" />
+    <script src="houniao/js/index.js"></script>
+
+
+</head>
+
+<body>
+    <!-- <div style="display: block;width: 100%;height: 68px;">
+        <header style="background-color: black;width: 100%;height: 68px;">
+            <a href="#" class="brand">wildlife conservation</a>
+            <div class="menu-btn"></div>
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="index.html" style="color: greenyellow;">首页</a>
+                    <a href="main.html">物种树图</a>
+                    <a href="example.html">珍惜动物分布</a>
+                    <a href="#">Gallery</a>
+                    <a href="last.html">云词政策</a>
+                </div>
+            </div>
+        </header>
+    </div> -->
+
+    <audio loop autoplay="autoplay">
+        <source src="houniao/audio/自然生态（钢琴）.theora.vorbis.ogg" type="audio/ogg" />
+        <source src="houniao/audio/自然生态（钢琴）.mp3" type="audio/mpeg" />
+      </audio>
+
+
+
+        <div style="display: block; width: 100%;height: 68px;">
+            <header style="background-color: rgb(0, 0, 0);width: 100%;height: 68px;">
+              <a href="index.html" class="brand">SkyMigrants</a>
+                <div class="menu-btn"></div>  
+                <div class="navigation">
+                    <div class="navigation-items">
+                        <a href="index.html" style="color: greenyellow;">首页</a>
+                        <a href="main.html">鸟类物种树图</a>
+                        <a href="shida_html/one.html">我国濒危鸟类分布</a>
+                        <a href="page2.html">各项数据</a>
+                        <a href="MAA/html/MAA_handbook.html">鸟类图鉴</a></a>
+                        <a href="last2.html">云词政策</a>
+                    </div>
+                </div>
+            </header>
+        </div>
+    
+
+
+    <!-- <section class="home">
+        <video class="video-slide active" src="1.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="2.mp4" autoplay muted loop></video>
+        <div class="content active">
+            <h1>野生动物保护<br><span>数据可视化</span></h1>
+            <p>项目简介：作品以一级保护动物为例，介绍了其一级物种的个数及名称，并将一些濒危保护动物的境内分布列举了出来，并将其与历年数量变化进行了对比，以此来说明保护动物刻不容缓。</p>
+            <a href="#">更多介绍</a>
+        </div>
+        <div class="content">
+            <h1>野生动物保护<br><span>数据可视化</span></h1>
+            <p>数据来源于videovo以及pixabay，均为免费使用素材，数据来源于相关数据网，不存在侵权行为。
+            </p>
+            <a href="#">更多说明</a>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section> -->
+
+
+
+
+      <div id="fullpage">
+
+      
+       
+
+
+        <!-- 封面 -->
+        <div class="section section1">
+          <div class="w">
+            <video  id="myVideo" width="100%" height="150%" autoplay="autoplay" muted="muted">
+              <source src="houniao/video/fengmian.mp4" type="video/mp4" />
+              <source src="houniao/video/fengmian.vp8.vorbis.webm" type="video/webm" />
+              <object data="movie.mp4" width="320" height="240">
+                <embed src="movie.swf" width="320" height="240" />
+              </object>
+            </video>
+            <div class="con">
+              <h4 id = "sec1t1">候鸟迁徙</h4>
+              <p id = "sec1t1">——最让人着迷的自然现象之一</p>
+            </div>
+            <div class="mouseScroll"></div>
+          </div>
+        </div>
+        <!-- 候鸟现状 -->
+        <div class="section section2">
+          <div class="w">
+            <div class="video">
+              <video
+                width="100%"
+                height="100%"
+                autoplay="autoplay"
+                muted="muted"
+              >
+                <source src="houniao/video/section2.mpeg4.aac.mp4" type="video/mp4" />
+                <source src="houniao/video/section2.webm" type="video/webm" />
+                <object data="movie.mp4" width="320" height="240">
+                  <embed src="movie.swf" width="320" height="240" />
+                </object>
+              </video>
+            </div>
+            <div class="con">
+              <p class="text p1" id="sec2p" >据估计，全球现存1万多种鸟类</p>   <br/>
+              
+              <p class="text p2" id="sec2p">其中约1/5是迁徙鸟类</p>   <br/>
+              
+              <p class="text p3" id="sec2p">   <br/>
+              
+                世界上每年有数十亿只候鸟在繁殖地和越冬地之间迁徙
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 九条线 -->
+        <div class="section section3">
+          <div class="w">
+            <div class="video">
+              <video
+                width="100%"
+                height="100%"
+                autoplay="autoplay"
+                muted="muted"
+              >
+                <source src="houniao/video/3-bxin.mpeg4.aac.mp4" type="video/mp4" />
+                <source src="houniao/video/3-bxin.vp8.vorbis.webm" type="video/webm" />
+                <object data="movie.mp4" width="320" height="240">
+                  <embed src="movie.swf" width="320" height="240" />
+                </object>
+              </video>
+            </div>
+            <div class="con">
+              <p class="text p1" id="sec3p">全球九大迁飞区，四个经过我国</p>
+            </div>
+            <div class="btn_1">
+              <button class="button1 btn1">东大西洋迁飞区</button>
+              <button class="button1 btn2">黑海/地中海迁飞区</button>
+              <button class="button1 btn3">西亚-东非迁飞区</button>
+              <button class="button1 btn4">中亚迁飞区</button>
+              <button class="button1 btn5">东亚-澳大利西亚迁飞区</button>
+              <button class="button1 btn6">西太平洋迁飞区</button>
+              <button class="button1 btn7">太平洋美洲迁飞区</button>
+              <button class="button1 btn8">密西西比美洲迁飞区</button>
+              <button class="button1 btn9">大西洋美洲迁飞区</button>
+            </div>
+            <div class="btn_2">
+              <button class="button2 c">中国</button>
+              <button class="button2 world">世界</button>
+            </div>
+            <div class="img" id = "route">
+              <img src="houniao/images/3/东大西洋迁飞区.gif" alt="" class="fly" />
+              <img src="houniao/images/3/黑海-地中海迁飞区.gif" alt="" class="fly" />
+              <img src="houniao/images/3/西亚-东非迁飞区.gif" alt="" class="fly" />
+              <img src="houniao/images/3/中亚迁飞区.gif" alt="" class="fly" />
+              <img src="houniao/images/3/东亚-澳大利西亚迁飞区.gif" alt="" class="fly" />
+              <img src="houniao/images/3/西太平洋迁飞区.gif" alt="" class="fly" />
+              <img src="houniao/images/3/太平洋美洲迁飞区.gif" alt="" class="fly" />
+              <img src="houniao/images/3/密西西比美洲迁飞区.gif" alt="" class="fly" />
+              <img src="houniao/images/3/大西洋美洲迁飞区.gif" alt="" class="fly" />
+              <img src="houniao/images/3/四条线加中国.gif" alt="" class="china" />
+              <img src="houniao/images/3/九条线新.gif" alt="" class="wimage" />
+            </div>
+          </div>
+          <script type="text/javascript">
+            const buttons = document.querySelectorAll(".button1");
+            var flys = document.querySelectorAll(".fly");
+            buttons.forEach((btn, index) => {
+              btn.addEventListener("click", function (e) {
+                // for (let i = 0; i < 9; ++i) {
+                //   flys[i].style.display = "none";
+                // }
+                let x = e.clientX - e.target.offsetLeft - 170;
+                let y = e.clientY - e.target.offsetTop - 543;
+                let ripples = document.createElement("span");
+                this.appendChild(ripples);
+                ripples.style.left = x + "px";
+                ripples.style.top = y + "px";
+  
+                setTimeout(() => {
+                  ripples.remove();
+                }, 1000);
+              });
+            });
+          </script>
+        </div>
+        <!-- 不能都到达 -->
+        <div class="section section4">
+          <div class="w">
+            <span class="word">但，不是每一只候鸟都能到达目的地</span>
+          </div>
+        </div>
+        <!-- <script>
+          const word = document.querySelector(".section4 .word");
+          // let str = "但，不是每一只候鸟都能到达目的地";
+          // for (let i = 1; i <= str.length; i++) {
+          //   setTimeout(function () {
+          //     word.innerHTML = str.substr(0, i);
+          //   }, (i - 1) * 100);
+          // }
+          // word.innerHTML = "但，不是每一只候鸟都能到达目的地";
+          // setInterval;
+        </script> -->
+        <!-- 候鸟数量下降的世界情况 -->
+        <div class="section section5">
+          <div class="w">
+            <div class="con">
+              <p class="text p1" id="sec5p">
+                数据显示：候鸟数量下降，（其中主要发生在候鸟在迁徙途中）。
+              </p>
+              <p class="detail detail1">
+                北美的鸟类数量，比20世纪70年代少了大约30亿只。这不仅标志着鸟类数量的减少，也标志着鸟类多样性的减少。
+              </p>
+              <p class="detail detail2">
+                在俄罗斯，种群数量正在急剧下降的红腹滨鹬、和大滨鹬等水鸟都属于稀有保护物种。
+              </p>
+              <p class="detail detail3">每年多达1.4亿只候鸟命丧尼罗河谷！</p>
+            </div>
+            <div class="gif">
+              <section class="gif1">
+                <img src="houniao/images/上海.gif" alt="" />
+                <p>
+                  从2006至2010年，上海水鸟数量正从2006年度的20多万只次，下降到目前的不足15万只次
+                </p>
+              </section>
+              <!-- <section class="gif2">
+                <img src="images/大滨鹬.gif" alt="" />
+              </section> -->
+              <section class="gif3">
+                <img src="houniao/images/洞庭湖候鸟下降趋势.gif" alt="" />
+                <p>
+                  据东洞庭湖常规监测，上世纪90年代，洞庭湖水鸟达20万只以上，到2003至2004年，调查到水鸟仅13万多只，2005至2006年均少于10万只，越冬水鸟数量明显减少。
+                </p>
+              </section>
+            </div>
+            <div class="bird">
+              <div class="hf">
+                <img src="houniao/images/红腹滨鹬.jpg" alt="" />
+                <span class="hfsp">红腹滨鹬<br />近危物种</span>
+                <p class="hfp">
+                  红腹滨鹬全球的种群数量估计数为891000-979000只，欧洲的种群数量估计在15000-30000繁殖对。 由于栖息地的丧失导致种群大幅度下降，被评为近危物种。
+                </p>
+              </div>
+              <div class="fn">
+                <img src="houniao/images/绿隐蜂鸟.jpg" alt="" />
+                <span class="fnsp">绿隐蜂鸟<br />濒危物种</span>
+                <p class="fnp">
+                  在现代社会中，蜂鸟赖以生存的栖息地被人类逐渐破坏，有的蜂鸟也面临灭绝的危险。
+                </p>
+              </div>
+              <div class="zg">
+                <img src="houniao/images/知更鸟.jfif" alt="" />
+                <span class="zgsp">知更鸟<br />低危物种</span>
+                <p class="zgp">
+                  知更鸟的的数目在二十世纪初急剧减少，家雀和八哥进驻了知更鸟的巢穴。
+                </p>
+              </div>
+              <div class="szy">
+                <img src="houniao/images/嘴鹬（yù）.webp" alt="" />
+                <span class="szysp">勺嘴鹬(yù)<br />极度濒危</span>
+                <p class="szyp">
+                  勺嘴鹬（yù），全球范围内，也才只有600多只，极为罕见，比大熊猫还要珍贵！
+                </p>
+              </div>
+              <div class="bzh">
+                <img src="houniao/images/白枕鹤.png" alt="" />
+                <span class="bzhsp">白枕鹤<br />易危物种</span>
+                <p class="bzhp">
+                  白枕鹤又名红面鹤，为国家一级重点保护野生动物，被誉为“鸟中国宝”，体形与丹顶鹤相似，略小于丹顶鹤，大于白头鹤，上体为石板灰色，尾羽为暗灰色，末端具有宽阔的黑色横斑，取食时主要用喙啄食。
+                </p>
+              </div>
+              <div class="hl">
+                <img src="houniao/images/黑脸琵鹭.jfif" alt="" />
+                <span class="hlsp">黑脸琵鹭<br />濒危物种</span>
+                <p class="hlp">
+                  国家一级重点保护野生动物，基于持续的栖息地丧失和退化，总物种数量仍在下降。
+                </p>
+              </div>
+              <div class="bg">
+                <img src="houniao/images/白鹳.jpg" alt="" />
+                <span class="bgsp">白鹳<br />濒危物种</span>
+                <p class="bgp">
+                  欧洲白鹳主要从北欧往东南，飞向小亚细亚，然后沿着尼罗河迁往南非。
+                </p>
+              </div>
+              <div class="bt">
+                <img src="houniao/images/白头海雕.jpg" alt="" />
+                <span class="btsp">白头海雕<br />低危物种 </span>
+                <p class="btp">
+                  1940年起，每年超过2千只白头海雕因此死于非命。在几十年间，白头海雕的种群数量出现了断崖式的下滑。
+                </p>
+              </div>
+              <div class="dbj">
+                <img src="houniao/images/大滨鹬.jpg" alt="" />
+                <span class="dbjsp">大滨鹬<br />濒危物种</span>
+                <p class="dbjp">
+                  大滨鹬曾经种群数量高达38万，在过去22年间它们的种群数量下降了78%，现在被评估为IUCN红色名录濒危物种。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 你们想知道它们在途中发生了什么吗+下面以一只天鹅的视角展开 -->
+        <div class="section section6">
+          <div class="w">
+            <span class="word p1">你们想知道它们在途中发生了什么吗</span>
+            <span class="word p2">接下来以一只天鹅的视角展开</span>
+          </div>
+        </div>
+        <!-- 起飞 -->
+        <div class="section section7">
+          <div class="w">
+            <div class="title">
+              <h3>起飞</h3>
+              <p>早在八月下旬它们就开始了艰难而又漫长的旅程。</p>
+            </div>
+            <div class="video">
+              <video
+                width="100%"
+                height="100%"
+                autoplay="autoplay"
+                muted="muted"
+                class="video1"
+                loop
+              >
+                <source
+                  src="houniao/video/起飞背景 新.vp8.vorbis.mpeg4.aac.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="houniao/video/起飞背景 新.vp8.vorbis.webm"
+                  type="video/webm"
+                />
+                <object data="movie.mp4" width="320" height="240">
+                  <embed src="movie.swf" width="320" height="240" />
+                </object>
+              </video>
+              <img src="houniao/images/起飞的天鹅静帧.png" alt="" class="jingzhen" />
+              <video width="100%" height="100%" autoplay="true" loop="true"
+                muted="muted" class="video2" >
+                <source
+                  src="houniao/video/起飞动画全程新.vp8.vorbis.mpeg4.aac.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="houniao/video/起飞动画全程新.vp8.vorbis.webm"
+                  type="video/webm"
+                />
+                <object data="movie.mp4" width="320" height="240">
+                  <embed src="movie.swf" width="320" height="240" />
+                </object>
+              </video>
+            </div>
+            <div class="contact">
+              <img src="houniao/images/接触点.gif" alt="" />
+              <p class="con_p">点击帮助候鸟起飞</p>
+            </div>
+            <div class="con">
+              <p class="text p1" id="sec7p">
+                我，一只天鹅，为了能熬过这个冬天，我准备往南飞。
+              </p>
+              <p class="text p2" id="sec7p">
+                我们天鹅是飞高冠军，飞行高度可达9千米，甚至能飞越珠穆朗玛峰。
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 觅食 -->
+        <div class="section section8">
+          <div class="w">
+            <div class="title">
+              <h3>觅食</h3>
+              <p>
+                早天鹅吃水生植物的根、茎、叶、果、小鱼、小虾、软体动物及甲壳类的动物等。
+              </p>
+            </div>
+            <div class="video">
+              <video
+                width="100%"
+                height="100%"
+                autoplay="autoplay"
+                muted="muted"
+                class="video1"
+              >
+                <source src="houniao/video/觅食_背景.mpeg4.aac.mp4" type="video/mp4" />
+                <source
+                  src="houniao/video/觅食_背景.mpeg4.aac.vp8.vorbis.webm"
+                  type="video/webm"
+                />
+                <object data="movie.mp4" width="320" height="240">
+                  <embed src="movie.swf" width="320" height="240" />
+                </object>
+              </video>
+              <img src="houniao/images/觅食.png" alt="" class="jingzhen" />
+              <video width="100%" height="100%"  autoplay="autoplay" 
+                muted="muted" class="video2" >
+                <source src="houniao/video/觅食中.mpeg4.aac.mp4" type="video/mp4" />
+                <source src="houniao/video/觅食中.vp8.vorbis.webm" type="video/webm" />
+                <object data="movie.mp4" width="320" height="240">
+                  <embed src="movie.swf" width="320" height="240" />
+                </object>
+              </video>
+            </div>
+            <div class="contact">
+              <img src="houniao/images/接触点.gif" alt="" />
+              <p class="con_p">点击帮助候鸟觅食</p>
+            </div>
+            <div class="con" >
+              <p class="text p1" id="sec8p">为了能有足够的力气飞行，离开之前我会吃饱</p>
+            </div>
+          </div>
+        </div>
+        <!-- 人为捕杀 -->
+        <div class="section section9">
+          <div class="w">
+            <div class="title">
+              <h3>人为捕杀</h3>
+              <p>
+                捕杀候鸟危害极大，不仅会破坏业已脆弱的生态环境，而且吃鸟者也冒着很大风险，有的候鸟会携带病毒。
+              </p>
+            </div>
+            <div class="video">
+              <video
+                width="100%"
+                height="90%"
+                autoplay="autoplay"
+                muted="muted"
+                class="video1"
+                loop
+              >
+                <source
+                  src="houniao/video/不带火花的背景.mpeg4.aac.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="houniao/video/不带火花的背景.mpeg4.aac.vp8.vorbis.webm"
+                  type="video/webm"
+                />
+                <object data="movie.mp4" width="320" height="240">
+                  <embed src="movie.swf" width="320" height="240" />
+                </object>
+              </video>
+  
+              <video
+                width="100%"
+                height="90%"
+                autoplay="autoplay"
+                muted="muted"
+                class="video2"
+              >
+                <source src="houniao/video/猎杀.mpeg4.aac.mp4" type="video/mp4" />
+                <source src="houniao/video/猎杀.vp8.vorbis.webm" type="video/webm" />
+                <object data="movie.mp4" width="320" height="240">
+                  <embed src="movie.swf" width="320" height="240" />
+                </object>
+              </video>
+            </div>
+            <div class="contact">
+              <img src="houniao/images/接触点.gif" alt="" />
+              <p class="con_p">枪已上膛 点击试试</p>
+            </div>
+            <div class="con">
+              <p class="text p1" id="sec9p">在途中可能遇到偷猎者</p>
+            </div>
+            <h3 class="worn">此为违法行为！</h3>
+          </div>
+        </div>
+        <!-- 猛禽猎杀 -->
+        <div class="section section10">
+          <div class="w">
+            <div class="title">
+              <h3>猛禽猎杀</h3>
+              <p>
+                外表优雅的天鹅虽脾气暴躁属大型水禽，但也会受到个别猛禽袭击。比如金雕就可在空中击杀天鹅。
+              </p>
+            </div>
+            <div class="video">
+              <video
+                width="100%"
+                height="100%"
+                autoplay="autoplay"
+                muted="muted"
+                loop="true"
+              >
+                <source
+                  src="houniao/video/猛禽捕猎_1.vp8.vorbis.mpeg4.aac.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="houniao/video/猛禽捕猎_1.vp8.vorbis.webm"
+                  type="video/webm"
+                />
+                <object data="movie.mp4" width="320" height="240">
+                  <embed src="movie.swf" width="320" height="240" />
+                </object>
+              </video>
+            </div>
+            <div class="con">
+              <p class="text p1" id="sec10p">也可能被猛禽袭击</p>
+            </div>
+          </div>
+        </div>
+        <!-- 飞行形式 -->
+        <div class="section section11">
+          <div class="w">
+            <div class="title">
+              <h3>飞行形式</h3>
+              <p>
+                人字形、一字形等形式。一是为了减少能量消耗；二是为了抵御攻击。
+              </p>
+            </div>
+            <div class="video">
+              <video
+                width="100%"
+                height="100%"
+                autoplay="autoplay"
+                muted="muted"
+                class="video1"
+              >
+                <source
+                  src="houniao/video/队形变换天亮版1.mpeg4.aac.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="houniao/video/队形变换天亮版1.mpeg4.aac.vp8.vorbis.webm"
+                  type="video/webm"
+                />
+                <object data="movie.mp4" width="320" height="240">
+                  <embed src="movie.swf" width="320" height="240" />
+                </object>
+              </video>
+  
+              <video
+                width="100%"
+                height="100%"
+                autoplay="autoplay"
+                muted="muted"
+                class="video2"
+                loop="true"
+              >
+                <source
+                  src="houniao/video/队形变换天亮版2.mpeg4.aac.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="houniao/video/队形变换天亮版2.mpeg4.aac.vp8.vorbis.webm"
+                  type="video/webm"
+                />
+                <object data="movie.mp4" width="320" height="240">
+                  <embed src="movie.swf" width="320" height="240" />
+                </object>
+              </video>
+            </div>
+            <div class="contact">
+              <img src="houniao/images/接触点.gif" alt="" />
+              <p class="con_p">点击变换队形</p>
+            </div>
+            <div class="con">
+              <p class="text p1"  id="sec11p1">为了省力和安全，我们会以小队的形式飞行</p>
+            </div>
+          </div>
+        </div>
+        <!-- 城市关灯 -->
+        <div class="section section12">
+          <div class="w">
+            <div class="title">
+              <h3>城市灯光</h3>
+              <p>城市灯光会吸引迁徙的鸟类，并产生致死的后果。</p>
+            </div>
+            <div class="video">
+              <video
+                width="100%"
+                height="100%"
+                muted="muted"
+                autoplay="autoplay"
+                class="video2"
+                loop="true"
+              >
+                <source
+                  src="houniao/video/城市开灯版加上鸟.mpeg4.aac.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="houniao/video/城市开灯版加上鸟.mpeg4.aac.vp8.vorbis.webm"
+                  type="video/webm"
+                />
+                <object data="movie.mp4" width="320" height="240">
+                  <embed src="movie.swf" width="320" height="240" />
+                </object>
+              </video>
+            </div>
+            <div class="contact">
+              <img src="houniao/images/接触点.gif" alt="" />
+              <p class="con_p">点击帮助城市关灯</p>
+            </div>
+            <div class="con">
+              <p class="text p1" id="sec12p">我们晚上赶路的时候特别容易被这些大灯光干扰</p>
+              <p class="text p2" id="sec12p">
+                去年我有个朋友就被这些灯光吸引住了，在上方多飞了几圈结果不小心撞到了
+              </p>
+            </div>
+            <div class="con_1">
+              <p class="p3">2022年世界候鸟日的主题是减少光污染，</p>
+              <p class="p4">熄灯，让候鸟安全回家</p>
+              <p class="p5">Dim the Lights for Birds at Night!</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 湿地破坏 -->
+        <div class="section section13">
+          <div class="w">
+            <div class="title">
+              <h3>湿地破坏</h3>
+              <p>
+                很多珍稀水禽的繁殖和迁徙离不开湿地，因此湿地被称为“鸟类乐园”。
+              </p>
+            </div>
+            <div class="video">
+              <video
+                width="100%"
+                height="100%"
+                autoplay="autoplay"
+                muted="muted"
+                class="video1"
+              >
+                <source
+                  src="houniao/video/湿地消失的现实.mpeg4.aac.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="houniao/video/湿地消失的现实.mpeg4.aac.vp8.vorbis.webm"
+                  type="video/webm"
+                />
+                <object data="movie.mp4" width="320" height="240">
+                  <embed src="movie.swf" width="320" height="240" />
+                </object>
+              </video>
+              <video
+                width="100%"
+                height="100%"
+                autoplay="autoplay"
+                muted="muted"
+                class="video2"
+              >
+                <source src="houniao/video/湿地恢复.mpeg4.aac.mp4" type="video/mp4" />
+                <source
+                  src="houniao/video/湿地恢复.mpeg4.aac.vp8.vorbis.webm"
+                  type="video/webm"
+                />
+                <object data="movie.mp4" width="320" height="240">
+                  <embed src="movie.swf" width="320" height="240" />
+                </object>
+              </video>
+            </div>
+            <div class="contact">
+              <img src="houniao/images/接触点.gif" alt="" />
+              <p class="con_p">点击恢复湿地</p>
+            </div>
+            <div class="con">
+              <p class="text p1" id="sec13p">本来我的脑中出现的是奔波之后的美好生活</p>
+              <p class="text p2" id="sec13p">可低头一看湿地没了</p>
+              <p class="text p3" id="sec13p">这下不仅休息不了了，连吃的也没了</p>
+            </div>
+          </div>
+        </div>
+        <!-- 到达 -->
+        <div class="section section14">
+          <div class="w">
+            <div class="video">
+              <video
+                width="100%"
+                height="100%"
+                autoplay="autoplay"
+                muted="muted"
+              >
+                <source src="houniao/video/到达.mpeg4.aac.mp4" type="video/mp4" />
+                <source
+                  src="houniao/video/到达.mpeg4.aac.vp8.vorbis.webm"
+                  type="video/webm"
+                />
+                <object data="movie.mp4" width="320" height="240">
+                  <embed src="movie.swf" width="320" height="240" />
+                </object>
+              </video>
+            </div>
+            <div class="title">
+              <h3>到达</h3>
+              <p>
+                每年冬季，成千上万只白天鹅会飞到河南三门峡、山东荣成等地过冬，构成一幅和谐美丽的生态画卷。
+              </p>
+            </div>
+            <div class="con">
+              <p class="text p1" id="sec14p">最终，经历了千辛万苦，我们终于到达了过冬地</p>
+            </div>
+          </div>
+        </div>
+        <!-- 返程 -->
+        <div class="section section15">
+          <div class="w">
+            <div class="video">
+              <video
+                width="100%"
+                height="100%"
+                autoplay="autoplay"
+                muted="muted"
+                class="video1"
+              >
+                <source src="houniao/video/天伦之乐.mpeg4.aac.mp4" type="video/mp4" />
+                <source
+                  src="houniao/video/天伦之乐.mpeg4.aac.vp8.vorbis.webm"
+                  type="video/webm"
+                />
+                <object data="movie.mp4" width="320" height="240">
+                  <embed src="movie.swf" width="320" height="240" />
+                </object>
+              </video>
+            </div>
+            <div class="title">
+              <h3>希望</h3>
+              <p>
+                冬季已经过去，春风伴着候鸟奔赴远方，而在未来的夏季，新家园依然会热闹美丽。
+              </p>
+            </div>
+            <div class="con">
+              <p class="text p1" id="sec15p">
+                不过，几个月之后，我就该为了繁衍，再次踏上这凶险之路
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+<script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+    });
+
+    //Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual) {
+        btns.forEach((btn) => {
+            btn.classList.remove("active");
+        });
+
+        slides.forEach((slide) => {
+            slide.classList.remove("active");
+        });
+
+        contents.forEach((content) => {
+            content.classList.remove("active");
+        });
+
+        btns[manual].classList.add("active");
+        slides[manual].classList.add("active");
+        contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+            sliderNav(i);
+        });
+    });
+</script>
+
+
+</html>
