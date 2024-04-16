@@ -229,7 +229,7 @@ $(function () {
                     }
                 },
                 type: 'bar',
-                data: [84, 90, 217, 230, 625]
+                data: [84, 90, 217, 230, 325]
             },
 
 
@@ -255,7 +255,7 @@ $(function () {
                     value: 230,
                     name: '鱼类'
                 }, {
-                    value: 625,
+                    value: 325,
                     name: '鸟类'
                 }],
                 label: {
